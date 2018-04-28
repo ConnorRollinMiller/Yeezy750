@@ -1,0 +1,888 @@
+/* Stylesheet for index.html */
+
+@font-face {
+   font-family: "Sheep Sans";
+   src: url("assets/fonts/sheepsansbold.ttf");
+}
+
+@font-face {
+   font-family: "Source Sans Pro";
+   src: url("assets/fonts/SourceSansPro-Light.ttf");
+}
+
+@font-face {
+   font-family: 'Yeezy';
+   src: url("../assets/fonts/yeezy_tstar-regular-webfont.ttf");
+   src: url("../assets/fonts/yeezy_tstar-regular-webfont.woff") format("woff"),
+   url("../assets/fonts/yeezy_tstar-heavy-webfont.eot") format("eot");
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Yeezy';
+   src: url("../assets/fonts/yeezy_tstar-bold-webfont.ttf");
+   src: url("../assets/fonts/yeezy_tstar-bold-webfont.woff") format("woff"),
+   url("../assets/fonts/yeezy_tstar-heavy-webfont.eot") format("eot");
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: 'Yeezy';
+   src: url("../assets/fonts/yeezy_tstar-heavy-webfont.ttf");
+   src: url("../assets/fonts/yeezy_tstar-heavy-webfont.woff") format("woff"),
+   url("../assets/fonts/yeezy_tstar-heavy-webfont.eot") format("eot");
+   font-weight: bolder;
+}
+
+@font-face {
+   font-family: 'Yeezy';
+   src: url("../assets/fonts/yeezy_tstar-light-webfont.ttf");
+   src: url("../assets/fonts/yeezy_tstar-light-webfont.woff") format("woff"),
+   url("../assets/fonts/yeezy_tstar-heavy-webfont.eot") format("eot");
+   font-weight: lighter;
+}
+
+body {
+   line-height: 1.2em;
+   font-family: source sans pro;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "yeezy";
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   line-height: 1em;
+}
+
+h1 {
+   font-size: 2.5em;
+}
+
+h2 {
+   font-size: 2em;
+}
+
+h3 {
+   font-size: 1.75em;
+}
+
+h4 {
+   font-size: 1.5em;
+}
+
+h5 {
+   font-size: 1.3em;
+}
+
+h6 {
+   font-size: 1.2em;
+}
+
+.section-heading {
+   text-align: center;
+   margin: 0;
+   font-size: 1.5em;
+   position: relative;
+   margin-bottom: 64px;
+}
+
+.section-heading h2 {
+   margin: 0;
+   background: white;
+   font-weight: 600;
+   padding: 0 16px;
+}
+
+.section-heading hr {
+   width: 800px;
+   position: absolute;
+   margin: 0;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border: none;
+   height: 3px;
+   background: #414141;
+   z-index: -1
+}
+
+.heading1 {
+   font-size: 275%;
+   font-weight: lighter;
+   text-transform: capitalize;
+   margin: 0;
+   margin-bottom: 16px;
+   color: white;
+   text-align: center;
+}
+
+.heading2 {
+   width: 100%;
+   font-size: 300%;
+   font-weight: bold;
+   font-family: "Yeezy";
+   margin: 0;
+   text-align: center;
+}
+
+
+.main-button {
+   padding: 14px 32px;
+   background: #FF3B3F;
+   color: white;
+   font-weight: 600;
+   font-family: "source sans pro";
+   font-size: 1.6em;
+   text-transform: uppercase;
+   border-radius: 6px;
+}
+
+button {
+   border: none;
+   transition: all 0.5s;
+}
+
+button:hover, .main-button:hover {
+   box-shadow: inset 0px 0px 150px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+}
+
+:focus {
+   outline: none;
+}
+
+
+::-webkit-scrollbar {
+   width: 14px;
+}
+
+
+::-webkit-scrollbar-thumb {
+   background: #FF3B3F;
+   border: 2px double #fff;
+   border-radius: 12px;
+   -webkit-box-shadow: inset 0 0 2px rgba(51, 51, 51, 0.3)
+}
+
+
+/* =====================================================
+                           NAV
+===================================================== */
+
+nav {
+   position: fixed;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 110px;
+   z-index: 1000;
+   background: rgba(255, 59, 63, 0.95);
+   padding: 1%;
+   visibility: hidden;
+}
+
+#nav-logo {
+   height: 75%;
+   margin-right: 16px;
+}
+
+#nav-logo img {
+   height: 100%;
+   width: auto;
+}
+
+nav h1 {
+   margin: 0;
+   color: white;
+   font-size: 3em;
+}
+
+
+/* =====================================================
+                  HEADER / BANNER
+===================================================== */
+
+#banner {
+   width: 100%;
+   height: 100vh;
+   padding: 5% 0;
+   background-image: url("../assets/images/header.jpg");
+   background-size: cover;
+   background-position: 50% 50%;
+   background-attachment: fixed;
+   position: relative;
+}
+
+#header-contents {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   left: 50%;
+   top: 40%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+}
+
+#logo {
+   width: 15%;
+}
+
+header hr {
+   border: none;
+   height: 5px;
+   background: white;
+   width: 2.5%;
+   margin: 24px 0;
+   border-radius: 2px;
+}
+
+header h2 {
+   text-align: center;
+   font-family: "yeezy";
+   font-size: 4em;
+   color: white;
+   margin: 0;
+   margin-bottom: 24px;
+}
+
+header h3 {
+   text-align: center;
+   font-size: 2.5em;
+   font-weight: lighter;
+   text-transform: capitalize;
+   margin: 0;
+   margin-bottom: 8px;
+   color: white;
+}
+
+/* =====================================================
+                     SECTION GENDER
+===================================================== */
+
+#section-gender {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   transition: 1s;
+}
+
+.gender-inactive {
+   filter: blur(3px);
+}
+
+.gender-img-container {
+   width: 32.5%;
+   position: relative;
+   text-align: center;
+}
+
+#choice-men {
+   margin-left: auto;
+   margin-right: 7.5%;
+}
+
+#choice-women {
+   margin-right: auto;
+}
+
+.gender-img-container img {
+   width: 90%;
+}
+
+.gender-img-container h3 {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 3em;
+   margin: 0;
+   color: white;
+   font-family: "yeezy";
+   opacity: 0;
+   z-index: 10;
+   transition: 0.5s;
+}
+
+.gender-img-container img {
+   transition: 0.5s;
+}
+
+.gender-img-container:hover img {
+   filter: blur(3px);
+   cursor: pointer;
+}
+
+.gender-img-container:hover h3 {
+   opacity: 1 !important;
+   cursor: pointer;
+}
+
+
+/* =====================================================
+                     CHOOSE COLOR
+===================================================== */
+
+#section-color-picker {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   transition: 0.5s;
+}
+
+.inner-container {
+   width: 100%;
+   display: flex;
+   position: relative;
+}
+
+#shoe-info-container {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+#shoe-title {
+   font-size: 2.5em;
+   margin: 0;
+   margin-bottom: 24px;
+   font-weight: lighter;
+   line-height: 1em;
+   text-transform: capitalize;
+}
+
+#colorway-name {
+   font-family: "yeezy";
+   font-weight: bold;
+   font-size: 3em;
+   z-index: 100;
+   line-height: 0.9em;
+   margin: 0;
+   margin-bottom: 32px;
+}
+
+#color-buttons-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 32px;
+}
+
+.ring {
+   position: relative;
+   padding: 2px;
+   border-radius: 50%;
+   border: 3px solid rgba(0, 0, 0, 0);
+   transition: 0.5s;
+   margin: 0px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.active-color-picker {
+   border-color: #FF3B3F;
+}
+
+.color-buttons {
+   padding: 35px !important;
+   border-radius: 50%;
+   transition: 0.5s;
+   margin: 0 !important;
+}
+
+.ring:hover {
+   transform: scale(1.25);
+   cursor: pointer;
+   opacity: 1;
+}
+
+#color-button1 {
+   background: rgba(192, 192, 192, 1);
+   background: linear-gradient(rgba(192, 192, 192, 1),
+   rgba(192, 192, 192, 1)50%,
+   rgba(241, 241, 241, 1) 50%,
+   rgba(241, 241, 241, 1));
+}
+
+#color-button2 {
+   background: linear-gradient(rgba(99, 78, 61, 1),
+   rgba(99, 78, 61, 1) 50%,
+   rgba(216, 172, 123, 1) 50%,
+   rgba(216, 172, 123, 1));
+}
+
+
+#color-button3 {
+   background: linear-gradient(rgba(16, 16, 16, 1),
+   rgba(16, 16, 16, 1) 50%,
+   rgba(35, 35, 35, 1) 50%,
+   rgba(35, 35, 35, 1));
+}
+
+#color-button4 {
+   background: linear-gradient(rgba(90, 90, 90, 1),
+   rgba(90, 90, 90, 1) 50%,
+   rgba(250, 202, 155, 1) 50%,
+   rgba(250, 202, 155, 1));
+}
+
+#shoe-colorway-img-container {
+   width: 60%;
+   transform: rotate(-20deg);
+   padding: 17.5%;
+   z-index: -1;
+}
+
+.shoe-img-colors {
+   position: absolute;
+   left: 45%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   transition: 0.5s;
+   width: 80%;
+}
+
+#color-img1 {
+   opacity: 1;
+}
+
+#color-img2 {
+   opacity: 0;
+}
+
+#color-img3 {
+   opacity: 0;
+}
+
+#color-img4 {
+   opacity: 0;
+}
+
+/* =====================================================
+                     SECTION NEWSLETTER
+===================================================== */
+
+#section-newsletter {
+   display: flex;
+   background: #414141;
+   color: white;
+   width: 106%;
+   margin: 0 -3%;
+   padding: 3.5% 0%;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   transition: 0.5s;
+}
+
+#newsletter-promo-text {
+   margin: 0;
+   font-weight: bold;
+   text-align: center;
+}
+
+#email-input {
+   width: 25%;
+   height: 50px;
+   border: 3px solid rgba(0, 0, 0, 0);
+   border-radius: 6px;
+   font-size: 1.2em;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 5px 10px;
+   margin: 0 2.5%;
+
+}
+
+#newsletter-button {
+   padding: 5px 24px;
+   font-size: 1.25em;
+   height: 50px;
+}
+
+/* =====================================================
+                        CHECKOUT
+===================================================== */
+
+#section-checkout {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s;
+}
+
+#checkout-info {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+#checkout-price {
+   margin: 0;
+   color: #FF3B3F;
+   font-size: 3em;
+   margin-bottom: 24px;
+}
+
+#checkout-colorway {
+   margin: 0;
+   font-size: 2.5em;
+   margin-bottom: 24px;
+}
+
+select {
+   margin-bottom: 24px;
+   font-size: 1.2em;
+   font-family: source sans pro;
+   border: 2px solid #333;
+   border-radius: 6px;
+}
+
+option {
+   padding: 4px 8px;
+}
+
+#checkout-mens {
+   padding: 10%;
+   width: 150px;
+   margin: 0;
+   border: 3px solid #333;
+   border-radius: 6px;
+   transition: 0.5s;
+   margin-bottom: 24px;
+}
+
+#checkout-womens {
+   padding: 10%;
+   width: 150px;
+   margin: 0;
+   margin-bottom: 24px;
+   border: 3px solid #333;
+   border-radius: 6px;
+   transition: 0.5s;
+}
+
+#checkout-mens:hover, #checkout-womens:hover {
+   cursor: pointer;
+   background: #FF3B3F;
+   color: white;
+}
+
+#checkout-size {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: table;
+   border-spacing: 16px;
+}
+
+#checkout-size li {
+   display: table-cell;
+   width: 60px;
+   height: 60px;
+   vertical-align: middle;
+   border: 2px solid #333;
+   border-radius: 4px;
+   font-size: 1.2em;
+   transition: 0.5s;
+}
+
+#checkout-size li:hover {
+   cursor: pointer;
+   background: #FF3B3F;
+   color: white;
+}
+
+#checkout-img-container {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.checkout-shoe-img {
+   width: 100%;
+   position: absolute;
+   left: 45%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#checkout-img-color1 {
+   opacity: 1;
+   transition: 0.5s
+}
+
+#checkout-img-color2 {
+   opacity: 0;
+   transition: 0.5s
+}
+
+#checkout-img-color3 {
+   opacity: 0;
+   transition: 0.5s
+}
+
+#checkout-img-color4 {
+   opacity: 0;
+   transition: 0.5s
+}
+
+.checkout-gender-active {
+   background: #FF3B3F;
+   color: white;
+   transform: scale(1.3);
+}
+
+.checkout-size-active {
+   background: #FF3B3F;
+   color: white;
+   transform: scale(1.2);
+}
+
+/* =====================================================
+                     SECTION GALLERY
+===================================================== */
+
+#section-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   transition: 0.5s;
+}
+
+#slider {
+   width: 100%;
+   position: relative;
+}
+
+#slider-outter-container {
+   width: 85%;
+   margin: auto;
+   position: relative;
+   overflow: hidden;
+}
+
+#slide-container {
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 1s;
+   position: relative;
+}
+
+.slide {
+   width: calc(100% / 5);
+   margin: auto 1%;
+   height: 100%;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.slide::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+.slide-img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   height: 100%;
+   margin: auto 1%;
+}
+
+article {
+   position: relative;
+   padding: 0px 2.5%;
+}
+
+#left-button {
+   position: absolute;
+   top: 50%;
+   left: 2.5%;
+   z-index: 10;
+   transition: 0.5s;
+   transition-timing-function: ease-in-out;
+}
+
+#right-button {
+   position: absolute;
+   top: 50%;
+   right: 2.5%;
+   z-index: 10;
+   transition: 0.5s;
+   transition-timing-function: ease-in-out;
+}
+
+i:hover {
+   cursor: pointer;
+}
+
+#right-button::before, #left-button::before {
+   color: rgba(51, 51, 51, 0.6);
+}
+
+#left-button:hover, #right-button:hover {
+   transform: scale(1.4);
+}
+
+#left-button:hover::before, #right-button:hover::before {
+   color: rgba(51, 51, 51, 0.9) !important;
+}
+
+
+/* =====================================================
+                     360 IMAGE
+===================================================== */
+
+.section-shoe-revolver {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+.shoe-animate-container {
+   margin: auto;
+   list-style: none;
+   padding: 0;
+   z-index: -1;
+
+}
+
+.shoe-animate-container li {
+   display: none;
+   position: relative;
+}
+
+.shoe-animate-container li img {
+   margin: auto;
+}
+
+.show {
+   display: flex !important;
+}
+
+.slide-text-container {
+   width: 45%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.slide-text-container button {
+   align-self: left;
+   margin-left: 10%;
+}
+
+
+.slide-text-container::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.heading-container {
+   width: 100%;
+   padding-left: 10%;
+   margin-bottom: 6%;
+}
+
+/* =====================================================
+                        FOOTER
+===================================================== */
+
+footer {
+   background: #333;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 48px 0;
+   transition: 0.5s;
+   position: relative;
+}
+
+#footer-logo {
+   width: 12.5%;
+   margin: auto;
+}
+
+#footer-content {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 48px;
+}
+
+footer h2 {
+   margin: 0;
+   color: #FF3B3F;
+   font-size: 2.5em;
+   line-height: 1em;
+   margin-bottom: 16px;
+}
+
+footer h2:last-of-type {
+   margin-bottom: 0;
+}
+
+#footer-hr {
+   width: 2.5%;
+   border: none;
+   height: 4px;
+   background: #FF3B3F;
+   border-radius: 2px;
+   margin: 24px 0;
+}
+
+#website-author-container {
+   color: #FF3B3F;
+   text-align: center;
+   font-size: 0.8em;
+   line-height: 1em
+}
+
+#website-author-container h3 {
+   margin: 0;
+   margin-bottom: 16px;
+}
+
+#website-author {
+   color: white;
+   text-decoration: none;
+}
+
+#website-author:hover {
+   text-decoration: underline;
+}

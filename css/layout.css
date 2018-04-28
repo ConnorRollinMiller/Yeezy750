@@ -1,0 +1,292 @@
+/* Layout for index.html */
+
+*, *:before, *:after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   max-width: 100%;
+   overflow-x: hidden;
+   font-size: 18px;
+}
+
+main {
+   width: 95%;
+   margin: auto;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   align-content: center;
+   justify-content: center;
+}
+
+.row [class^="col"] {
+   margin: 2%;
+   min-height: 0.125rem;
+   padding: 24px;
+}
+
+.row::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.col-1 {
+   width: 4.33%;
+
+}
+
+.col-2 {
+   width: 12.66%;
+}
+
+.col-3 {
+   width: 21%;
+}
+
+.col-4 {
+   width: 29.33%;
+}
+
+.col-5 {
+   width: 37.66%;
+}
+
+.col-6 {
+   width: 46%;
+}
+
+.col-7 {
+   width: 54.33%;
+}
+
+.col-8 {
+   width: 62.66%;
+}
+
+.col-9 {
+   width: 71%;
+}
+
+.col-10 {
+   width: 79.33%;
+}
+
+.col-11 {
+   width: 87.66%;
+}
+
+.col-12 {
+   width: 96%;
+}
+
+.page-full-width {
+   width: 100%;
+}
+
+.justify {
+   text-align: justify;
+}
+
+.center {
+   text-align: center;
+   margin: auto;
+}
+
+.left {
+   text-align: left;
+}
+
+.right {
+   text-align: right;
+}
+
+.justify {
+   text-align: justify;
+}
+
+section {
+   position: relative;
+   padding: 80px 0px;
+   transition: 1s;
+}
+
+@media (max-width: 900px) {
+
+   nav {
+      height: 110px;
+   }
+
+   #logo {
+      width: 25%;
+   }
+
+   header hr {
+      width: 5%;
+   }
+
+   .inner-container {
+      flex-direction: column;
+   }
+
+   #choice-men {
+      margin: auto;
+   }
+   #choice-women {
+      margin: auto;
+   }
+
+   .gender-img-container {
+      width: 60%;
+   }
+
+   #choice-women img, #choice-men img {
+      filter: blur(1px);
+   }
+
+   .gender-img-container h3 {
+      font-size: 3em;
+      opacity: 1;
+   }
+
+   #checkout-info {
+      width: 100%;
+      order: 2;
+   }
+
+   #checkout-img-container {
+      width: 100%;
+      padding: 0% 0 75% 0;
+   }
+
+   .checkout-shoe-img {
+      width: 115%;
+   }
+
+   #shoe-info-container {
+      width: 100%;
+      order: 2;
+   }
+
+   #section-newsletter {
+      flex-direction: column;
+   }
+
+   #section-newsletter h4, #section-newsletter input, #section-newsletter button {
+      margin: 8px 0;
+   }
+
+   #shoe-colorway-img-container {
+      width: 100%;
+      margin: 48px 0 80px 0;
+   }
+
+   .ring {
+      margin: 0;
+      margin-bottom: 10px;
+   }
+
+   .ring:hover {
+      transform: scale(1);
+      border-color: #FF3B3F;
+   }
+
+   #slide-container {
+      height: 400px;
+   }
+
+   #footer-logo {
+      width: 25%;
+   }
+
+   #footer-hr {
+      width: 10%;
+   }
+}
+
+@media (max-width: 650px) {
+
+   nav {
+      height: 90px;
+   }
+
+   nav h1 {
+      display: none;
+   }
+
+   #nav-logo {
+      height: 100%;
+      margin: 0;
+   }
+}
+
+@media (max-width: 600px) {
+
+   section {
+      padding: 32px 0;
+   }
+
+   h1 {
+      font-size: 3em !important;
+   }
+
+   h2 {
+      font-size: 2.5em !important;
+   }
+
+   h3 {
+      font-size: 2em !important;
+   }
+
+   .section-heading h2 {
+      font-size: 1.5em !important;
+   }
+
+   header h1 {
+      margin-bottom: 16px;
+   }
+
+   header hr {
+      width: 7.5%;
+   }
+
+   #logo {}
+
+   .gender-img-container {
+      width: 80%;
+   }
+
+   #shoe-title {
+      margin-bottom: 8px;
+   }
+
+   #colorway-name {
+      margin-bottom: 16px;
+   }
+
+   #color-buttons-container {
+      margin-bottom: 16px;
+   }
+
+   #footer-logo {
+      width: 35%;
+   }
+
+   #footer-content h2 {
+      font-size: 2em !important;
+   }
+
+   @media (max-width: 500px) {
+      .shoe-img-colors {
+         width: 115%;
+      }
+   }
+
+
+}

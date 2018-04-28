@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+
+      <meta charset="UTF-8">
+      <meta name="description" content="Dunwoody - Web Dev - Team Website">
+      <meta name="keywords" content="Product Page, Fashion, Apparrel">
+      <meta name="author" content="Connor Miller">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- FAVICON -->
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+      <title>Yeezy 750 Boost</title>
+
+      <!-- External Stylesheet -->
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/layout.css" rel="stylesheet" type="text/css">
+      <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+      <!-- JQuery is used when you initially click the start button in the header and it scrolls you to the first section and also to fadIn and fadeOut each section as you proceed through the website. Last, it's used in making the image appear as you pass past the header section -->
+
+      <!-- Vanilla JS is used in changing each image as you choose new colors in the color-picker section and checkout section. Also, its used in 'validating' a correct email in the newsletter section and it will change the price of the shoe if you enter the right email. Last it's used in the gallery section slider to change slides. -->
+
+   </head>
+
+   <body>
+
+      <nav>
+         <div id="nav-logo">
+            <img src="assets/images/logo1.png" alt="navigation logo" title="logo">
+         </div>
+         <h1>Yeezy 750 boost</h1>
+      </nav>
+
+      <header id="banner">
+
+         <div id="header-contents">
+            <img src="assets/images/logo.png" alt="logo" id="logo" title="logo">
+            <hr>
+            <h3 class="heading1">Make a statement</h3>
+            <h2>Yeezy 750 boost</h2>
+            <button class="main-button" id="start-button">Start</button>
+         </div>
+      </header>
+
+      <main id="main">
+
+         <section id="section-gender">
+            <div class="section-heading">
+               <h2>Pick your gender</h2>
+               <hr>
+            </div>
+            <div class="inner-container">
+               <div class="gender-img-container" id="choice-men" data-gender="Men">
+                  <h3>men</h3>
+                  <img src="assets/images/men.jpg" alt="gender-choice-men">
+               </div>
+               <div class="gender-img-container" id="choice-women" data-gender="Women">
+                  <h3>women</h3>
+                  <img src="assets/images/women.jpg" alt="gender-choice-women">
+               </div>
+            </div>
+         </section>
+
+
+         <section id="section-color-picker">
+
+            <div class="section-heading">
+               <h2>choose Your color</h2>
+               <hr>
+            </div>
+            <div class="inner-container">
+               <div id="shoe-info-container">
+
+                  <h3 id="shoe-title">colorway:</h3>
+                  <h3 id="colorway-name">Cool Grey</h3>
+
+                  <div class="" id="color-buttons-container">
+                     <div class="ring active-color-picker" data-colorway="Cool Grey">
+                        <div class="color-buttons" id="color-button1"></div>
+                     </div>
+                     <div class="ring" data-colorway="Chocolate">
+                        <div class="color-buttons" id="color-button2"></div>
+                     </div>
+                     <div class="ring" data-colorway="Triple Black">
+                        <div class="color-buttons" id="color-button3"></div>
+                     </div>
+                     <div class="ring" data-colorway="Gum Buttom">
+                        <div class="color-buttons" id="color-button4"></div>
+                     </div>
+                  </div>
+                  <div>
+                     <button class="main-button" id="color-button">Pick this</button>
+                  </div>
+               </div>
+
+               <div id="shoe-colorway-img-container">
+                  <img src="assets/images/shoe-color1.webp" class="shoe-img-colors" id="color-img1" alt="cool grey" title="cool grey">
+                  <img src="assets/images/shoe-color2.png" class="shoe-img-colors" id="color-img2" alt="chocolate" title="chocolate">
+                  <img src="assets/images/shoe-color3.webp" class="shoe-img-colors" id="color-img3" alt="triple black" title="triple black">
+                  <img src="assets/images/shoe-color4.webp" class="shoe-img-colors" id="color-img4" alt="gum bottoms" title="gum bottoms">
+               </div>
+            </div>
+
+         </section>
+
+         <section id="section-checkout">
+            <div class="section-heading">
+               <h2>your order</h2>
+               <hr>
+            </div>
+            <div class="inner-container">
+               <div id="checkout-info">
+                  <h3 id="checkout-price">$350</h3>
+                  <div>
+                     <h3 id="checkout-colorway">cool grey</h3>
+                     <select id="checkout-color-dropdown">
+                        <option value="coolgrey">Cool Grey</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="tripleblack">Triple Black</option>
+                        <option value="gumbottoms">Gum Bottoms</option>
+                     </select>
+                  </div>
+                  <div>
+                     <h3 id="checkout-mens">men</h3>
+                     <h3 id="checkout-womens">women</h3>
+                  </div>
+                  <ul id="checkout-size">
+                     <li data-size="7">7</li>
+                     <li data-size="8">8</li>
+                     <li data-size="9">9</li>
+                     <li data-size="10">10</li>
+                     <li data-size="11">11</li>
+                     <li data-size="12">12</li>
+                  </ul>
+                  <!-- <button class="main-button">Done</button> -->
+               </div>
+               <div id="checkout-img-container">
+
+                  <img src="assets/images/shoe-color1.webp" alt="cool grey" title="cool grey" class="checkout-shoe-img" id="checkout-img-color1">
+                  <img src="assets/images/shoe-color2.png" alt="chocolate" title="chocolate" class="checkout-shoe-img" id="checkout-img-color2">
+                  <img src="assets/images/shoe-color3.webp" alt="triple black" title="triple black" class="checkout-shoe-img" id="checkout-img-color3">
+                  <img src="assets/images/shoe-color4.webp" alt="gum bottoms" title="gum bottoms" class="checkout-shoe-img" id="checkout-img-color4">
+
+               </div>
+            </div>
+         </section>
+
+         <aside id="section-newsletter">
+            <h4 id="newsletter-promo-text">Signup & Get 15% Off!</h4>
+            <input id="email-input" type="email" placeholder="EMAIL">
+            <button class="main-button" id="newsletter-button">Get discount</button>
+         </aside>
+
+         <section id="section-gallery">
+            <div class="section-heading">
+               <h2>Customer Gallery</h2>
+               <hr>
+            </div>
+            <div id="slider">
+               <i class="fa fa-angle-left fa-3x" id="left-button" aria-hidden="true"></i>
+               <div id="slider-outter-container">
+
+                  <div id="slide-container">
+                     <div class="slide">
+                        <img src="assets/images/banner8.jpg" alt="slide-img1" title="slide-img1" class="slide-img">
+                     </div>
+                     <div class="slide">
+                        <img src="assets/images/banner7.jpg" alt="slide-img2" title="slide-img2" class="slide-img" id="slide-img2">
+                     </div>
+                     <div class="slide">
+                        <img src="assets/images/banner9.jpg" alt="slide-img3" title="slide-img3" class="slide-img" id="slide-img3">
+                     </div>
+                     <div class="slide">
+                        <img src="assets/images/banner13.jpg" alt="slide-img4" title="slide-img4" class="slide-img" id="slide-img4">
+                     </div>
+                     <div class="slide">
+                        <img src="assets/images/banner10.jpg" alt="slide-img5" title="slide-img5" class="slide-img" id="slide-img5">
+                     </div>
+
+                  </div>
+
+               </div>
+               <i class="fa fa-angle-right fa-3x" id="right-button" aria-hidden="true"></i>
+            </div>
+         </section>
+
+      </main>
+
+      <footer id="footer">
+         <img src="assets/images/logo2.png" alt="logo" title="logo" id="footer-logo">
+         <div id="footer-content">
+            <hr id="footer-hr">
+            <h2>yeezy 750 boost</h2>
+            <h2>X</h2>
+            <h2>kanye west</h2>
+         </div>
+         <aside id="website-author-container">
+            <h3>Website By <a href="https://www.instagram.com/connorbiz/?hl=en" target="_blank" id="website-author">Connor Miller</a></h3>
+
+         </aside>
+
+      </footer>
+
+
+      <script src="js/jquery.js"></script>
+
+      <script src="js/script.js"></script>
+
+   </body>
+
+</html>
+
+
+<!--
+<div class="section-shoe-revolver">
+   <ul class="shoe-animate-container" id="shoe-animate-container1">
+      <li class="show"><img src="assets/images/yeezy/img01.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img02.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img03.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img04.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img05.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img06.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img07.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img08.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img09.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img10.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img11.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img12.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img13.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img14.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img15.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img16.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img17.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img18.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img19.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img20.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img21.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img22.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img23.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img24.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img25.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy/img26.jpg" alt="gum-bottom-360view"></li>
+   </ul>
+</div>
+
+<div class="section-shoe-revolver">
+   <ul class="shoe-animate-container" id="shoe-animate-container2">
+      <li class="show"><img src="assets/images/yeezy2/img01.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img02.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img03.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img04.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img05.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img06.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img07.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img08.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img09.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img10.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img11.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img12.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img13.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img14.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img15.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img16.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img17.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img18.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img19.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img20.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img21.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img22.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img23.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img24.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img25.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy2/img26.jpg" alt="gum-bottom-360view"></li>
+   </ul>
+</div>
+
+<div class="section-shoe-revolver">
+   <ul class="shoe-animate-container" id="shoe-animate-container3">
+      <li class="show"><img src="assets/images/yeezy3/img01.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img02.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img03.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img04.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img05.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img06.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img07.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img08.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img09.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img10.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img11.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img12.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img13.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img14.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img15.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img16.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img17.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img18.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img19.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img20.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img21.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img22.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img23.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img24.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img25.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy3/img26.jpg" alt="gum-bottom-360view"></li>
+   </ul>
+</div>
+
+<div class="section-shoe-revolver">
+   <ul class="shoe-animate-container" id="shoe-animate-container4">
+      <li class="show"><img src="assets/images/yeezy4/img01.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img02.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img03.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img04.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img05.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img06.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img07.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img08.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img09.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img10.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img11.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img12.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img13.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img14.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img15.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img16.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img17.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img18.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img19.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img20.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img21.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img22.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img23.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img24.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img25.jpg" alt="gum-bottom-360view"></li>
+      <li><img src="assets/images/yeezy4/img26.jpg" alt="gum-bottom-360view"></li>
+   </ul>
+</div>
+-->
